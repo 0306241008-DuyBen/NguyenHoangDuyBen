@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <div class="admin-container">
+        
+        <aside class="admin-sidebar">
+            <div class="logo">
+                ADMIN <i class="fas fa-gamepad"></i>
+            </div>
+            <nav>
+                <ul>
+                    <li class="active"><a href="#"><i class="fas fa-home"></i> Trang Chủ Quản Trị</a></li>
+                    <li><a href="#"><i class="fas fa-newspaper"></i> Quản Lý Bài Viết</a></li>
+                    <li><a href="#"><i class="fas fa-tags"></i> Danh Mục & Thẻ</a></li>
+                    <li><a href="#"><i class="fas fa-users"></i> Người Dùng</a></li>
+                    <li><a href="#"><i class="fas fa-cog"></i> Cài Đặt Website</a></li>
+                    <li><a href="#"><i class="fas fa-question-circle"></i> Hỗ Trợ</a></li>
+                    <li><a href="index.html"><i class="fas fa-sign-out-alt"></i> Đăng Xuất</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="admin-main">
+            <header>
+                <h1>Trang Chủ Quản Trị</h1>
+            </header>
+            
+            <section class="thong-ke">
+                <div class="stat-box">
+                    <h2>36</h2>
+                    <p>Bài Viết</p>
+                </div>
+                <div class="stat-box">
+                    <h2>6.3K</h2>
+                    <p>Lượt Xem</p>
+                </div>
+                <div class="stat-box">
+                    <h2>720</h2>
+                    <p>Bình Luận</p>
+                </div>
+            </section>
+
+            <section class="quan-ly-bai-viet">
+                <h2>Quản Lý Bài Viết</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Tiêu Đề</th>
+                            <th>Trạng Thái</th>
+                            <th>Ngày Giờ</th>
+                            <th>Hoạt Động</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Lịch thi đấu CKTG 2025 LOL: T1, GEN, BLG, HLE, TWS</td>
+                            <td><span class="status da-dang">Đã Đăng</span></td>
+                            <td>08/09/2025</td>
+                            <td><a href="#">Sửa</a> <a href="#">Xóa</a></td>
+                        </tr>
+                        <tr>
+                            <td>DTCL 15.5 TFT: Thay đổi mới và độc đáo nhất</td>
+                            <td><span class="status da-dang">Đã Đăng</span></td>
+                            <td>08/07/2025</td>
+                            <td><a href="#">Sửa</a> <a href="#">Xóa</a></td>
+                        </tr>
+                        <tr>
+                            <td>Vòng loại CKTG TFT Mùa 15 – Chung kết Khu Vực APAC</td>
+                            <td><span class="status nhap">Nháp</span></td>
+                            <td>08/10/2025</td>
+                            <td><a href="#">Sửa</a> <a href="#">Xóa</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+
+    </div>
+
+</body>
+</html>

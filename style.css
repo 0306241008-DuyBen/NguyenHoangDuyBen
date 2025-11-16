@@ -1,0 +1,428 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #0f0f1a;
+    color: #ffffff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+header {
+    background-color: #1a1a2e;
+    border-bottom: 1px solid #333;
+    padding: 15px 0;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav li {
+    margin-left: 25px;
+}
+
+header nav a {
+    font-weight: bold;
+    font-size: 16px;
+    color: #cccccc;
+}
+
+.header-icons a {
+    margin-left: 20px;
+    font-size: 18px;
+    color: #cccccc;
+}
+
+.main-layout {
+    display: flex;
+    margin-top: 30px;
+    gap: 30px;
+}
+
+.main-content {
+    flex: 3;
+}
+
+.sidebar {
+    flex: 1;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h3 {
+    font-size: 20px;
+    border-bottom: 2px solid #777;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+.banner-lon {
+    position: relative;
+    overflow: hidden;
+}
+.banner-lon .banner-title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.5), transparent);
+    padding: 20px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-shadow: 0 0 5px rgba(0, 255, 255, 0.5);
+}
+
+.grid-3-cot {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+}
+.tin-nho h4 {
+    margin: 10px 0 0 0;
+    font-size: 15px;
+}
+
+.bai-viet {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+.bai-viet img {
+    width: 200px;
+    height: 120px;
+    object-fit: cover;
+}
+.bai-viet .info h4 {
+    margin: 0 0 10px 0;
+}
+.bai-viet .info p {
+    margin: 0;
+    color: #aaaaaa;
+    font-size: 14px;
+}
+
+.load-more {
+    display: block;
+    width: auto;
+    margin: 20px auto 0;
+    padding: 12px 30px;
+    background-color: transparent;
+    color: #cccccc;
+    border: 1px solid #777;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.tin-sidebar img {
+    margin-bottom: 10px;
+}
+.tin-sidebar h4 {
+    margin: 0 0 10px 0;
+    font-size: 18px;
+}
+.tin-sidebar p {
+    margin: 0;
+    color: #aaaaaa;
+    font-size: 14px;
+}
+
+.chi-tiet-bai-viet h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+.chi-tiet-bai-viet .meta {
+    color: #aaaaaa;
+    margin-bottom: 20px;
+}
+.chi-tiet-bai-viet .article-banner {
+    margin: 20px 0;
+}
+.chi-tiet-bai-viet h2, .chi-tiet-bai-viet h3 {
+    color: #aaaaaa;
+}
+.chi-tiet-bai-viet ul {
+    line-height: 1.6;
+}
+
+footer {
+    background-color: #1a1a2e;
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 30px;
+}
+footer .social-icons {
+    margin: 20px 0;
+}
+footer .social-icons a {
+    margin: 0 10px;
+    font-size: 20px;
+}
+footer .footer-links a {
+    margin: 0 15px;
+    font-size: 14px;
+    color: #aaaaaa;
+}
+footer p {
+    margin-top: 20px;
+    font-size: 12px;
+    color: #777;
+}
+
+.hidden {
+    display: none !important;
+}
+
+#modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 99;
+}
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #1a1a2e;
+    padding: 30px;
+    border-radius: 15px;
+    width: 400px;
+    max-width: 90%;
+    z-index: 100;
+    border: 1px solid #334;
+}
+
+.modal h2 {
+    text-align: center;
+    margin-top: 0;
+}
+.modal p {
+    text-align: center;
+    color: #aaaaaa;
+}
+
+.modal form input, .modal form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    background-color: #2a2a3e;
+    border: 1px solid #444;
+    color: white;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.modal form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.social-login {
+    text-align: center;
+    margin-top: 20px;
+}
+.social-login .social-icons {
+    margin-top: 15px;
+}
+.social-login .social-icons a {
+    font-size: 24px;
+    margin: 0 10px;
+    color: #cccccc;
+}
+
+.switch-form {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+.switch-form a {
+    color: #007bff;
+    font-weight: bold;
+}
+
+.user-profile .profile-avatar {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.user-profile .profile-avatar img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    display: inline-block;
+}
+.user-profile .profile-avatar button {
+    display: block;
+    margin: 10px auto 0;
+    background: none;
+    border: 1px solid #777;
+    color: #777;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    cursor: pointer;
+}
+.user-profile form label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #aaaaaa;
+}
+.user-profile .btn-save {
+    background-color: #007bff;
+}
+
+.gioi-thieu-content {
+    background-color: #1a1a2e;
+    padding: 30px 40px;
+    margin: 30px auto;
+    border-radius: 10px;
+    max-width: 900px;
+    box-sizing: border-box;
+}
+
+.gioi-thieu-content h1 {
+    text-align: center;
+    font-size: 32px;
+    color: #ffffff;
+    margin-bottom: 25px;
+}
+
+.gioi-thieu-content p {
+    line-height: 1.7;
+    color: #cccccc;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.gioi-thieu-content p strong {
+    color: #ffffff;
+}
+
+.gioi-thieu-content ul {
+    list-style: none;
+    padding-left: 0;
+    line-height: 1.8;
+}
+
+.gioi-thieu-content li {
+    color: #cccccc;
+    margin-bottom: 10px;
+}
+
+.gioi-thieu-content li strong {
+    color: #ffffff;
+}
+
+.gioi-thieu-content a {
+    color: #00aaff;
+    text-decoration: underline;
+}
+
+.gioi-thieu-content a:hover {
+    color: #ffffff;
+}
+
+a,
+button,
+.bai-viet,
+.tin-nho,
+.tin-sidebar,
+.banner-lon {
+    transition: all 0.3s ease;
+}
+
+.bai-viet:hover,
+.tin-nho:hover,
+.tin-sidebar:hover,
+.banner-lon:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+.bai-viet:hover .info h4,
+.tin-nho:hover h4,
+.tin-sidebar:hover h4 {
+    color: #aaaaaa;
+}
+
+.load-more:hover {
+    background-color: #333;
+    border-color: #333;
+    color: #ffffff;
+    transform: scale(1.02);
+}
+
+.modal form button:hover {
+    opacity: 0.85;
+    transform: scale(1.02);
+}
+
+header nav a:hover,
+.footer-links a:hover {
+    color: #ffffff;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+.header-icons a:hover,
+.social-icons a:hover {
+    color: #aaaaaa;
+}
+
+.banner-lon img {
+    transition: transform 0.4s ease;
+}
+
+.banner-lon:hover img {
+    transform: scale(1.05);
+}
+
+.banner-lon:hover .banner-title {
+    background: linear-gradient(to top, rgba(0,0,0,0.5), rgba(0,0,0,0.2));
+    color: #ffffff;
+}
